@@ -12,8 +12,8 @@ export const App = () => {
   }
 
   return (
-    <main className="App">
-      <div style={{ listStyleType: "none" }}>
+    <main>
+      <div>
         {data && data.map((item) => <Accordion key={item.id} {...item} />)}
       </div>
     </main>
