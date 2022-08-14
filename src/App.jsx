@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-import { fetchData } from "./data";
+import { useData } from "./hooks/useData";
 
 import "./index.css";
 
 export const App = () => {
   // Mock shopping list data
-  const [data, setData] = useState();
+  const { data, status } = useData();
 
   // Accordion & sub-accordion states
   const [showChildrenID2, setShowChildrenID2] = useState(false);
@@ -16,16 +16,6 @@ export const App = () => {
   const [showChildrenID5, setShowChildrenID5] = useState(false);
   const [showChildrenID6, setShowChildrenID6] = useState(false);
   const [showChildrenID7, setShowChildrenID7] = useState(false);
-
-  useEffect(() => {
-    fetchData()
-      .then((response) => {
-        setData(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
 
   function transformData(data) {
     if (!data) {
@@ -98,7 +88,7 @@ export const App = () => {
     });
   }
 
-  if (!data) {
+  if (status === "loading") {
     return "Fetching data...";
   }
 
