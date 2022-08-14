@@ -1,3 +1,5 @@
+import "./AccordionBranch.module.css";
+
 import { useState } from "react";
 
 import { Accordion } from "./Accordion";

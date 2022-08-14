@@ -1,4 +1,4 @@
-import "./index.css";
+import "./App.module.css";
 
 import { Accordion } from "./components/Accordion";
 import { useData } from "./hooks/useData";
