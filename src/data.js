@@ -1,7 +1,7 @@
 const backendData = [
   {
     id: "1",
-    name: "Shopping List"
+    name: "Shopping List",
   },
   {
     id: "2",
@@ -9,13 +9,13 @@ const backendData = [
     children: [
       {
         id: "8",
-        name: "Thai Peanut Chicken Noodles"
+        name: "Thai Peanut Chicken Noodles",
       },
       {
         id: "9",
-        name: "Spaghetti Bolognese"
-      }
-    ]
+        name: "Spaghetti Bolognese",
+      },
+    ],
   },
   {
     id: "3",
@@ -27,17 +27,17 @@ const backendData = [
         children: [
           {
             id: "10",
-            name: "Tuna"
+            name: "Tuna",
           },
           {
             id: "11",
-            name: "Baked Beans"
+            name: "Baked Beans",
           },
           {
             id: "12",
-            name: "Smoked Salmon"
-          }
-        ]
+            name: "Smoked Salmon",
+          },
+        ],
       },
       {
         id: "7",
@@ -45,15 +45,15 @@ const backendData = [
         children: [
           {
             id: "13",
-            name: "Kiwi Fruit"
+            name: "Kiwi Fruit",
           },
           {
             id: "14",
-            name: "Mango"
-          }
-        ]
-      }
-    ]
+            name: "Mango",
+          },
+        ],
+      },
+    ],
   },
   {
     id: "4",
@@ -61,9 +61,9 @@ const backendData = [
     children: [
       {
         id: "15",
-        name: "Tomato Sauce"
-      }
-      ]
+        name: "Tomato Sauce",
+      },
+    ],
   },
   {
     id: "5",
@@ -71,9 +71,9 @@ const backendData = [
     children: [
       {
         id: "16",
-        name: "Milk"
-      }
-    ]
+        name: "Milk",
+      },
+    ],
   },
 ];
 

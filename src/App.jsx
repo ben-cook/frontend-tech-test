@@ -23,7 +23,7 @@ export const App = () => {
         setData(response);
       })
       .catch((error) => {
-        console.log(error)
+        console.log(error);
       });
   }, []);
 
@@ -104,9 +104,7 @@ export const App = () => {
 
   return (
     <main className="App">
-      <div style={{ listStyleType: "none" }}>
-        {data && transformData(data)}
-      </div>
+      <div style={{ listStyleType: "none" }}>{data && transformData(data)}</div>
     </main>
   );
 };
