@@ -23,12 +23,19 @@ export const AccordionBranch = (props) => {
         aria-expanded={open}
         onClick={toggleOpen}
         onKeyDown={toggleOpen}
+        tabIndex={0}
       >
-        {open ? "▼" : "▶"}
-        {name}
-      </button>{" "}
+        <li
+          style={{
+            listStyleType: open ? "disclosure-open" : "disclosure-closed",
+          }}
+        >
+          {name}
+        </li>
+      </button>
+
       {open && (
-        <ul style={{ listStyleType: "none", margin: 0 }}>
+        <ul>
           {children.map((item) => (
             <Accordion key={item.id} {...item} />
           ))}

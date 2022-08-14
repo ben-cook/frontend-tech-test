@@ -1,1 +1,3 @@
-export const AccordionLeaf = ({ name }) => <li>• {name}</li>;
+import "./AccordionLeaf.module.css";
+
+export const AccordionLeaf = ({ name }) => <li>{name}</li>;
