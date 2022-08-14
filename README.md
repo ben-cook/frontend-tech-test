@@ -1,4 +1,4 @@
-# Centr Frontend Tech Test
+# Frontend Tech Test
 
 ## Setup Instructions
 
@@ -33,3 +33,29 @@ practice" patterns in React, while exhibiting the same end-user behaviour.**
 - Passing appropriate props, such as callback functions
 
 _Note that no visual changes are required for this task._
+
+# Personal Notes / Reflection
+
+## Improvements Made:
+
+- Added prettier config for consistent styling
+- Added useData hook
+- Abstracted out Accordion component
+- CSS Changes:
+  - Removed lots of unnecessary CSS (flexboxes everywhere) and edited selectors (App to main component)
+  - Made the Accordions focusable for a11y
+  - Changed the list elements to use native CSS markers
+  - Did not fix the light/dark theme, since visual changes weren't required
+- Converted global CSS file to CSS modules, which Vite supports out of the box
+- Renamed main.jsx to index.jsx for consistency
+
+## Tips:
+
+- Recursion  
+  _I used recursion to create a tree structure with the accordions, with branch and leaf nodes._
+- Componentising relevant code  
+  _I split the main App into `Accordion` components_
+- Making the relevant components "stateful" or "stateless"  
+  _I made branch nodes stateful, since they are either open or closed, while leaf nodes can be stateless since they don't need to keep track of anything_
+- Passing appropriate props, such as callback functions  
+  _I passed only the data needed to render a component to each child component. My solution didn't end up needing to use callback functions in props_
